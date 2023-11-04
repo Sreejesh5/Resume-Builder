@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="Template2.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Info -->
+        <div class="row mt-5 top" >
+            <div class="col-md-4 profile-pic">
+                <!-- Profile Picture -->
+                <img id="profile-picture-preview" src="{{profilePicture}}" alt="Profile Picture" class="img-fluid">
+            </div>
+          
+            <div class="col-md-8 profile">
+                <div class="row">
+                    <!-- Name -->
+                    <h1 id="name">{{name}}</h1>
+                  
+                    <!-- Job Title -->
+                    <p id="job">{{jobTitle}}</p>
+                </div>
+              
+                <!-- Contact Info -->
+                <div class=" row contact">
+                    <p id="email" class="email">{{email-id}}</p>
+                    <p id="phone" class="phone">{{phone-number}}</p>
+                    <p id="addressT" class="address">{{address}}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="row mt-5">
+            <!-- Sidebar - Left -->
+            <div class="col-md-4">
+              
+                <!-- Social Media Links -->
+                <div class="mb-4">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li id="FB"><i class="fa-brands fa-facebook">{{facebook}}</i></li>
+                        <li id="IG"><i class="fa-brands fa-instagram">{{instagram}}</i></li>
+                        <li id="LIN"><i class="fa-brands fa-linkedin">{{linkedin}}</i></li>
+                    </ul>
+                </div>
+              
+                <!-- Skills -->
+                <div class="mb-4">
+                    <h3>Skills</h3>
+                    <ul id="skills-list">
+                        {{skillItems}}
+                    </ul>
+                </div>
+              
+                <!-- Hobbies -->
+                <div class="mb-4">
+                    <h3>Hobbies</h3>
+                    <ul id="hobby-list">
+                        {{hobbyItems}}
+                    </ul>
+                </div>
+              
+                <!-- Languages -->
+                <div class="mb-4">
+                    <h3>Languages</h3>
+                    <ul id="language-list">
+                        {{languageItems}}
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content - Right -->
+            <div class="col-md-8">
+              
+                <!-- About Me -->
+                <div class="mb-4">
+                    <h2>About Me</h2>
+                    <p id="about-content">
+                        {{about}}
+                    </p>
+                </div>
+
+                <!-- Education -->
+                <div class="mb-4">
+                    <h2>Education</h2>
+                    <ul id="education-list">
+                        {{educationItems}}
+                    </ul>
+                </div>
+
+                <!-- Work Experience -->
+                <div>
+                    <h2>Work Experience</h2>
+                    <ul id="experience-list">
+                        {{experienceItems}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

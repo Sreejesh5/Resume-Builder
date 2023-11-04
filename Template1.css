@@ -1,0 +1,68 @@
+/* CSS Stylesheet for Template 1  */
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+                
+    body {
+        width: 100%; 
+    }
+    
+}    
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#hero {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+}
+
+#about {
+    background-color: #fff;
+}
+
+#experience .card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#experience .card-title {
+    font-size: 1.25rem;
+}
+
+#contact {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.col-md-6.contacts, .col-md-6.social-media {
+    padding-left: 5rem;
+}
+
+.row.footer {
+    --bs-gutter-x: 0;
+}
+
+.container.p p {
+    padding-left: 32px;
+}
+
+.fa-brands, .fab, ::before {
+    margin-right: 5px;
+}
+
+ul {
+    list-style: none;
+}

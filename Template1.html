@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="Template1.css">
+
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4" id="name">{{name}}</h1>
+            <p class="lead" id="job">{{jobTitle}}</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="mb-4">About Me</h2>
+            <p id="about-content">
+                {{about}}
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="bg-light py-5">
+        <div class="container">
+            <h2 class="mb-4">Education</h2>
+            <ul id="education-list">
+                {{educationItems}}
+            </ul>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Work Experience</h2>
+            <ul id="experience-list">
+                {{experienceItems}}
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="mb-4">Skills</h2>
+            <ul id="skills-list">
+                {{skillItems}}
+            </ul>
+        </div>
+    </section>
+
+    <!-- Hobby Section -->
+    <section id="hobby" class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Hobbies</h2>
+            <ul id="hobby-list">
+                {{hobbyItems}}
+            </ul>
+        </div>
+    </section>
+
+    <!-- Language Section -->
+    <section id="language" class="bg-light py-5">
+        <div class="container">
+            <h2 class="mb-4">Languages</h2>
+            <ul id="language-list">
+                {{languageItems}}
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-primary text-white py-5">
+        <div class="row footer">
+            <div class="col-md-6 contacts">
+                <div class="container p">
+                    <h2 class="mb-4">Contact Me</h2>
+                    <p id="email">{{email-id}}</p>
+                    <p id="phone">{{phone-number}}</p>
+                    <p id="addressT">{{address}}</p>
+                </div>
+            </div>
+            <div class="col-md-6 social-media">
+                <div class="container p">
+                    <h2 class="mb-4">Social Media</h2>
+                    <ul>
+                        <li id="FB"><i class="fa-brands fa-facebook">{{facebook}}</i></li>
+                        <li id="IG"><i class="fa-brands fa-instagram">{{instagram}}</i></li>
+                        <li id="LIN"><i class="fa-brands fa-linkedin">{{linkedin}}</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* CSS Stylesheet for Template 3 */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.col-md-4 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-fluid {
+    max-width: 90%;
+    margin-top: 20px;
+}
+
+.social-links ul {
+    margin-top: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.fa-brands, .fab, ::before {
+    margin-right: 5px;
+}
+
+.skills, .hobbies, .languages {
+    margin-top: 20px;
+}
+
+.skills h2, .hobbies h2, .languages h2 {
+    color: #007bff;
+}
+
+.skills ul, .hobbies ul, .languages ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li, .hobbies li, .languages li {
+    margin: 10px 0;
+}
+
+.col-md-8 {
+    padding-left: 20px;
+    background-color: #fff;
+}
+
+.name {
+    color: #007bff;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.job-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.about, .education, .work-experience {
+    margin-top: 20px;
+}
+
+.about h2, .education h2, .work-experience h2 {
+    color: #007bff;
+}
+
+.about p, .education p, .work-experience p {
+    margin: 10px 0;
+}
+
+.p-3 {
+    padding: 4.5rem !important;
+}
+
+@media print {
+
+    @page {
+      size: A4;
+      margin: 0px;
+    }
+
+  }
+  
